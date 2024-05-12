@@ -3,4 +3,4 @@ numpy
 pandas
 pydeck
 streamlit
-openai == 0.27.0
+openai==0.28
