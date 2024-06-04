@@ -59,11 +59,14 @@ def run():
     )
     # 项目部分
     st.write("## 项目经历")
+    st.image("hugging llm 001.png", width=800)
+    
     st.markdown(
         """
         ### 《Hugging llm》
         - **项目背景**: 随着ChatGPT的爆火，其背后其实蕴含着一个基本事实：AI能力得到了极大突破——大模型的能力有目共睹，未来只会变得更强。这世界唯一不变的就是变，适应变化、拥抱变化、喜欢变化，天行健君子以自强不息。我们相信未来会有越来越多的大模型出现，AI正在逐渐平民化，将来每个人都可以利用大模型轻松地做出自己的AI产品。所以，我们把项目起名为HuggingLLM，我们相信我们正在经历一个伟大的时代，我们相信这是一个值得每个人全身心拥抱的时代，我们更加相信这个世界必将会因此而变得更加美好。
         - **项目介绍**: 该项目主要介绍 ChatGPT 原理、使用和应用，降低使用门槛，让更多感兴趣的非NLP或算法专业人士能够无障碍使用LLM创造价值。ChatGPT改变了NLP行业，甚至正在改变整个产业。我们想借这个项目将ChatGPT介绍给更多的人，尤其是对此感兴趣、想利用相关技术做一些新产品或应用的学习者，尤其是非本专业人员。希望新的技术突破能够更多地改善我们所处的世界。
+        - **主要贡献**：我主要负责第八章ChatGPT的商业应用-LLM是星辰大海，介绍了ChatGPT的背景，以及其在：搜索、办公、教育、游戏、音乐、零售电商、广告营销、媒体新闻、金融、医疗、设计、影视、工业这些方面的商业实践案例，为开发者提供商业思路。
         - **项目链接**: [GitHub](https://github.com/datawhalechina/hugging-llm)
         - **实体书**：目前该项目已经由人民邮电出版社出版为《ChatGPT原理与应用开发》,购买[链接](https://u.jd.com/ficxj2d)
         """
@@ -175,7 +178,7 @@ def run():
     st.markdown(
         """
         - **Email**: 1580823387@qq.com
-        - **LinkedIn**: [MY LinkedIn](https://www.linkedin.com/in/your-profile)
+        - **LinkedIn**: [MY LinkedIn](https://www.linkedin.com/in/%E4%BD%A9%E6%9E%97-%E9%BB%84-6650b4264/)
         - **GitHub**: [HeteroCat](https://github.com/HeteroCat)
         """
     )
