@@ -92,7 +92,7 @@ def run():
         - **项目获奖**: HiDream.ai首届AIGC创作大赛三等奖
         - **项目介绍**: 在2023年10月份我参加了HiDream.ai的千象创造营，智象未来（HiDream.ai），是一家专注于构建视觉多模态基础模型及应用的生成式人工智能（AIGC）的初创公司。此次HiDream.ai首届AIGC创作大赛有四个赛道，我选择了图片类的个人爱好赛道创作了《摩羯座》并获得三等奖。经过此次比赛的影响我在后面又将我的作品完善创作出一个完整系列的AIGC作品《12星座》，欢迎在下面的文章链接观看我完整的创作过程和全部图片作品。
         - **主要贡献**：主要负责人
-        - **文章链接**: [《12星座》](https://github.com/dumengru1997/AsyncTrader?tab=readme-ov-file)
+        - **文章链接**: [《12星座》](https://juejin.cn/post/7300063447831117851)
         """
     )
     st.image("HCsuno.png", width=800)
@@ -103,9 +103,36 @@ def run():
         - **项目成果**: 歌曲《missing》登上suno.ai趋势榜，获得17w+播放量和近1k点赞量。
         - **项目介绍**: 《missing》这首歌是我在试用完suno平台后，将自己几年前写的歌词放进去生成的AI音乐作品，当时心血来潮写的歌词没想到在suno平台真正变成了一首动人的音乐。而且被这么多人喜欢感觉非常奇妙，以后会在suno持续创作新的音乐，下面是我的suno主页和抖音主页欢迎大家关注我━(*｀∀´*)ノ亻!
         - **主要贡献**：主理人
-        - **主页链接**: [Suno：HeteroCat401](https://suno.com/@heterocat401)      [抖音：HeteroCat401](https://v.douyin.com/ijmeD4eS/8@5.com)
+        - **主页链接**: [Suno：HeteroCat401](https://suno.com/@heterocat401)      [抖音：HeteroCat401](https://www.douyin.com/user/self)
         """
     )
+    st.write("## 证书")
+    col3, col4, col5 = st.columns(3)  # 在每一列中展示一张图片
+    with col3:
+        st.image("Certificate/1.png", width=200)  # 替换为您的图片链接
+        st.markdown("亚马逊云科技生成式AI精英证书")
+
+    with col4:
+        st.image("Certificate/2.png", width=200)  # 替换为您的图片链接
+        st.markdown("范德堡大学prompt课程证书")
+
+    with col5:
+        st.image("Certificate/3.png", width=200)  # 替换为您的图片链接
+        st.markdown("百度大模型应用创新挑战赛证书")
+
+    col6, col7, col8 = st.columns(3)  # 在每一列中展示一张图片
+    with col6:
+        st.image("Certificate/4.png", width=200)  # 替换为您的图片链接
+        st.markdown("科大讯飞prompt证书")
+
+    with col7:
+        st.image("Certificate/5.png", width=200)  # 替换为您的图片链接
+        st.markdown("百度prompt证书")
+
+    with col8:
+        st.image("Certificate/6.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("百度agent智能体开发者证书")
+
     # 工作部分
     st.write("## 工作经历")
     st.markdown(
@@ -190,7 +217,7 @@ def run():
     frameworks = {
             "Matplotlib": 85,
             "Pandas": 80,
-            "Openai": 80,
+            "Openai": 70,
             "NumPy": 65,
             "Streamlit": 60,
             "Flash": 60,
@@ -209,8 +236,9 @@ def run():
             "文心一言": 90,
             "coze": 75,
             "Suno": 70,
-            "Midjourney": 60,
-            "Sora": 60
+            "即梦":65,
+            "Midjourney": 60
+           
         }
 
     cols = st.columns(len(tools))
