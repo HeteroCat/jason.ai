@@ -40,7 +40,7 @@ def run():
             - 《ChatGPT原理与应用开发》共创作者
             - 《Hugging llm》项目核心贡献者之一
             -   稀土掘金社区AI人气作者
-            -  上海交通大学AI访谈嘉宾
+            -      上海交通大学AI访谈嘉宾
             -   知名开源AI组织Datewhale意向成员
             -  AI音乐创作者
 
