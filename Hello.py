@@ -41,8 +41,8 @@ def run():
             - 《Hugging llm》项目核心贡献者之一
             -   稀土掘金社区AI人气作者
             -    上海交通大学AI访谈嘉宾
-            -   知名开源AI组织Datewhale意向成员
-            -  AI音乐创作者
+            -   AI开源组织Datewhale意向成员
+            -  AI音乐MV创作者
 
 
 
@@ -62,7 +62,7 @@ def run():
     )
     # 项目部分
     st.write("## 项目经历")
-    st.image("hugging llm 001.png", width=800)
+    st.image("hugging llm 001.png", width=700)
     
     st.markdown(
         """
@@ -74,7 +74,7 @@ def run():
         - **实体书**：目前该项目已经由人民邮电出版社出版为《ChatGPT原理与应用开发》,购买[链接](https://u.jd.com/ficxj2d)
         """
     )
-    st.image("AsyncTrader.png", width=800)
+    st.image("AsyncTrader.png", width=700)
     
     st.markdown(
         """
@@ -85,28 +85,7 @@ def run():
         - **项目链接**: [《AsyncTrader》](https://github.com/dumengru1997/AsyncTrader?tab=readme-ov-file)
         """
     )
-    st.image("star.jpg", width=800)
     
-    st.markdown(
-        """
-        ### 《摩羯座》
-        - **项目获奖**: HiDream.ai首届AIGC创作大赛三等奖
-        - **项目介绍**: 在2023年10月份我参加了HiDream.ai的千象创造营，智象未来（HiDream.ai），是一家专注于构建视觉多模态基础模型及应用的生成式人工智能（AIGC）的初创公司。此次HiDream.ai首届AIGC创作大赛有四个赛道，我选择了图片类的个人爱好赛道创作了《摩羯座》并获得三等奖。经过此次比赛的影响我在后面又将我的作品完善创作出一个完整系列的AIGC作品《12星座》，欢迎在下面的文章链接观看我完整的创作过程和全部图片作品。
-        - **主要贡献**：主要负责人
-        - **文章链接**: [《12星座》](https://juejin.cn/post/7300063447831117851)
-        """
-    )
-    st.image("HCsuno.png", width=800)
-    
-    st.markdown(
-        """
-        ### 《missing》
-        - **项目成果**: 歌曲《missing》登上suno.ai趋势榜，获得17w+播放量和近1k点赞量。
-        - **项目介绍**: 《missing》这首歌是我在试用完suno平台后，将自己几年前写的歌词放进去生成的AI音乐作品，当时心血来潮写的歌词没想到在suno平台真正变成了一首动人的音乐。而且被这么多人喜欢感觉非常奇妙，以后会在suno持续创作新的音乐，下面是我的suno主页和抖音主页欢迎大家关注我━(*｀∀´*)ノ亻!
-        - **主要贡献**：主理人
-        - **主页链接**: [Suno：HeteroCat401](https://suno.com/@heterocat401)      [抖音：HeteroCat401](https://www.douyin.com/user/self)
-        """
-    )
     st.write("## 证书")
     col3, col4, col5 = st.columns(3)  # 在每一列中展示一张图片
     with col3:
@@ -132,7 +111,7 @@ def run():
 
     with col8:
         st.image("Certificate/6.jpg", width=200)  # 替换为您的图片链接
-        st.markdown("百度agent智能体开发者证书")
+        st.markdown("百度智能体平台开发者证书")
 
     # 工作部分
     st.write("## 工作经历")
@@ -144,7 +123,7 @@ def run():
         - **Technologies**: 小程序SDK开发, agent智能体开发，AI组件开发
         
         
-        ### 广州普瑞纯证医疗科技有限公司--      提示词工程师
+        ### 广州普瑞纯证医疗科技有限公司--      提示词工程师（实习）
         - **time**：2023.09-2023.11
         - **Description**: 
 
@@ -152,7 +131,7 @@ def run():
         - - 2.后端接口开发:承担了公司一部分邮件推送系统和订阅系统的接口开发。
         - **Technologies**: prompt 工程开发，产品测试，flask 开发，SQL
 
-        ### 广东亚太创新经济研究院--      数据治理工程师
+        ### 广东亚太创新经济研究院--      数据治理工程师（实习）
         - **time**：2023.05-2023.07
         - **Description**: 主要负责将国民经济行业分类和国标专利 IPC 这两个表进行匹配，包括通过 Python 代码进行数据清洗和整合、数据分析最后通过模糊算法进行匹配。
         - **Technologies**: Python，Excel，正则表达式
