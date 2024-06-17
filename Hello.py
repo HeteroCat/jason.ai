@@ -117,7 +117,7 @@ def run():
     st.write("## 工作经历")
     st.markdown(
         """
-        ### 深圳跳舞兰科技有限公司--           AI工程师
+        ### 深圳跳舞兰科技有限公司--         AI工程师
         - **time**：2024.06-至今
         - **Description**: 根据公司业务开发智能AI客服，调用大模型和AI工作流的能力构建agent智能体。
         - **Technologies**: 小程序SDK开发, agent智能体开发，AI组件开发
