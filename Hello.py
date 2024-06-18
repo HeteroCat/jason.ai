@@ -52,7 +52,7 @@ def run():
     # 项目部分
     st.write("## 项目经历")
     
-    st.image("hugging llm 001.png", width=400)
+    st.image("hugging llm 001.png", width=700)
     
     st.markdown(
         """
@@ -65,7 +65,7 @@ def run():
         """
     )
     
-    st.image("AsyncTrader.png", width=400)
+    st.image("AsyncTrader.png", width=700)
     
     st.markdown(
         """
@@ -77,7 +77,7 @@ def run():
         """
     )
 
-    st.image("new_juejin2.png", width=400)
+    st.image("new_juejin2.png", width=700)
     
     st.markdown(
         """
@@ -91,7 +91,7 @@ def run():
         - **博客链接**: [HeteroCat](https://juejin.cn/user/2221479480010573)
         """
     )
-    st.image("dw_life.png", width=400)
+    st.image("dw_life.png", width=700)
     
     st.markdown(
         """
