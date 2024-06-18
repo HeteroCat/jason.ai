@@ -52,7 +52,7 @@ def run():
     # 项目部分
     st.write("## 项目经历")
     
-    st.image("hugging llm 001.png", width=700)
+    st.image("hugging llm 001.png", width=400)
     
     st.markdown(
         """
@@ -65,7 +65,7 @@ def run():
         """
     )
     
-    st.image("AsyncTrader.png", width=700)
+    st.image("AsyncTrader.png", width=400)
     
     st.markdown(
         """
@@ -76,7 +76,36 @@ def run():
         - **项目链接**: [《AsyncTrader》](https://github.com/dumengru1997/AsyncTrader?tab=readme-ov-file)
         """
     )
+
+    st.image("new_juejin2.png", width=400)
     
+    st.markdown(
+        """
+        ### 《HeteroCat》
+        - **项目获奖**: 2023年度稀土掘金人气作者
+        - **项目介绍**: 从2022年7月份开始，我在稀土掘金社区做人工智能相关的学习分享和数据分析，数据挖掘相关的技术博客，目前累加阅读量 3.6w+, 其中文章《我眼中的 ChatGPT》曾获得全站第三的热度，《AI 爆发的一年 2023 总结》在掘金 2023 年度技术盘点征文获奖，同时加入掘金社区人工智能创作者扶持计划。并获得 2023 年掘金社区年度人气作者。
+        - **代表文章**： 
+        - [《AI 爆发的一年 2023 总结》](https://juejin.cn/post/7317908960756662306)
+        - [《一些更丰富的prompt技巧--from GitHub》](https://juejin.cn/post/7283426137968525312)
+        - [《我眼中的chatGPT》](https://juejin.cn/post/7198426159478669373)
+        - **博客链接**: [HeteroCat](https://juejin.cn/user/2221479480010573)
+        """
+    )
+    st.image("dw_life.png", width=400)
+    
+    st.markdown(
+        """
+        ### 《Datawhale》
+        - **组织介绍**: Datawhale 是一个专注于数据科学与 AI 领域的开源组织，从2023年初与Datawhale结识从此开始了我真正的AI学习实践的旅程，从懵懵懂懂的AI爱好者，到动手去实践一个个AI模型代码实现，再到参与大模型开源项目，并且最后幸运地出版成一本书。每一步都是如此奇妙，感谢datawhale。一路走来在 datawhale 里我不但收获了知识，还认识了很多优秀的朋友增长了见识，同时也让我认识到自己的不足和差距，向他们学习看齐，成为催促我前进的动力。最近 datawhale 在 GitHub 上进入全球前100名，在这里也祝愿 datawhale 越来越好，欢迎大家加入。
+        - **组织收获**: 目前是Datawhale的意向成员、优秀学习者、助教
+        - **参与活动**：《动手学数据分析》、《动手学深度学习》、《动手学AI视频生成》等等
+        - **组织贡献**： 
+        - [《hugging llm》](https://github.com/datawhalechina/hugging-llm)
+        - [《黄佩林的AI成长之路》](https://mp.weixin.qq.com/s/Lj_Wje3B4CkpH6SQT8fd1Q)
+        
+        - **开源链接**: [Datawhale](https://github.com/datawhalechina)
+        """
+    )
     st.write("## 证书")
     col3, col4, col5 = st.columns(3)  # 在每一列中展示一张图片
     with col3:
