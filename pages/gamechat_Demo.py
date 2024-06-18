@@ -11,9 +11,12 @@ st.caption("🚀 A streamlit chatbot powered by OpenAI LLM")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Please enter the game rules . let's start the journey of the text game!"}]
 
-for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
-
+# for msg in st.session_state.messages:
+#     st.chat_message(msg["role"]).write(msg["content"])
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        
+        st.markdown(message["content"])
 if prompt := st.chat_input():
     if not openai_api_key:
         st.info("Please add your OpenAI API key to continue.")
