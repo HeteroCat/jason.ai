@@ -226,7 +226,7 @@ def run():
             col.markdown(f"**{tool}**")
             col.markdown(progress_bar(proficiency), unsafe_allow_html=True)
     # 联系方式部分
-    st.write("## 联系方式")
+    st.write("## 联系 方式")
     st.markdown(
         """
         - **phone**: 19830512935
