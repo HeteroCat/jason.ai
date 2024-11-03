@@ -8,14 +8,7 @@ st.set_page_config(page_title="Dify 007Chatbot", page_icon="💬")
 # 侧边栏配置
 with st.sidebar:
     api_key = st.text_input("Dify API Key", key="chatbot_api_key", type="password")
-    st.markdown("""
-    ### About
-    This chatbot is powered by Dify API
     
-    ### Instructions
-    1. Enter your Dify API key
-    2. Start chatting!
-    """)
 
 # 主标题
 st.title("💬 Dify 007Chatbot")
