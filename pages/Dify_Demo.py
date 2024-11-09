@@ -14,15 +14,18 @@ with st.sidebar:
 st.title("💬 Dify 007Chatbot")
 st.caption("🚀 A streamlit chatbot powered by Dify AI")
 
-# 初始化会话状态
-if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
+# 在文件开头添加页面标识
+PAGE_ID = "dify_chat"
 
-if "conversation_id" not in st.session_state:
-    st.session_state.conversation_id = None
+# 修改状态键名，使其独特
+if f"{PAGE_ID}_messages" not in st.session_state:
+    st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
 
-# 显示聊天历史
-for message in st.session_state.messages:
+if f"{PAGE_ID}_conversation_id" not in st.session_state:
+    st.session_state[f"{PAGE_ID}_conversation_id"] = None
+
+# 修改后续所有使用 messages 的地方
+for message in st.session_state[f"{PAGE_ID}_messages"]:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
@@ -85,9 +88,9 @@ if prompt := st.chat_input("What would you like to know?"):
     except requests.exceptions.RequestException as e:
         st.error(f"Error occurred: {str(e)}")
 
-# 添加重置按钮到侧边栏
+# 修改重置按钮
 with st.sidebar:
     if st.button("Reset Conversation"):
-        st.session_state.messages = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
-        st.session_state.conversation_id = None
+        st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
+        st.session_state[f"{PAGE_ID}_conversation_id"] = None
         st.rerun()
