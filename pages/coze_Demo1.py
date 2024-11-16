@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-
+import time
 # Streamlit侧边栏输入API Key
 with st.sidebar:
     coze_api_key = st.text_input("Coze API Key", key="chatbot_api_key", type="password")
@@ -32,7 +32,7 @@ if prompt := st.chat_input():
     }
     chat_data = {
         "bot_id": "7426248689075028006",  # 请替换为实际的 bot_id
-        "user_id": "123456789",
+        "user_id": "154643545",
         "stream": False,
         "auto_save_history": True,
         "additional_messages": [{"role": "user", "content": prompt, "content_type": "text"}]
@@ -43,6 +43,26 @@ if prompt := st.chat_input():
     chat_result = chat_response.json()
 
     if chat_result.get("code") == 0:
+        chat_id = chat_result.get("data")["id"]
+        conversation_id = chat_result.get("data")["conversation_id"]
+        retrieve_url = f"https://api.coze.cn/v3/chat/retrieve"
+        headers = { 
+            "Authorization": f"Bearer {coze_api_key}",
+            "Content-Type": "application/json"
+        }
+        # 查看对话详情
+        retrieve_params = {
+            "conversation_id": conversation_id,
+            "chat_id": chat_id,
+        }
+        retrieve_response = requests.get(retrieve_url, headers=headers, params=retrieve_params)
+        
+        
+
+
+
+
+        chat_result = retrieve_response.json()
         msg = str(chat_result)
         st.session_state[f"{PAGE_ID}_messages"].append({"role": "assistant", "content": msg})
         st.chat_message("assistant").write(msg)
