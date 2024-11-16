@@ -1,78 +1,89 @@
 import requests
 import streamlit as st
+
+import json
 import time
-# Streamlit侧边栏输入API Key
-with st.sidebar:
-    coze_api_key = st.text_input("Coze API Key", key="chatbot_api_key", type="password")
-
-st.title("💬 HeteroCat Chatbot")
-st.caption("🚀 A Streamlit chatbot powered by Coze API")
-
-# 在文件开头添加页面标识
-PAGE_ID = "coze_chat"
-
-# 修改状态键名
-# 初始化会话状态
-if f"{PAGE_ID}_messages" not in st.session_state:
-    st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "Let's start the journey of the text game!"}]
 
 
+# API 配置
+BOT_ID = "7426248689075028006"
+API_TOKEN = "pat_rcEC9HZiRrsznSxTPzsS9tt3QonVshcHpABnjOXm7pXizy7izCoHzLr5G0Tb04k7"
+BASE_URL = "https://api.coze.cn/v3"
 
-# 获取用户消息并进行对话
-if prompt := st.chat_input():
-    st.session_state[f"{PAGE_ID}_messages"].append({"role": "user", "content": prompt})
-    st.chat_message("user").write(prompt)
-
-
-    # 进行 chat 对话请求
-    chat_url = f"https://api.coze.cn/v3/chat"
-    headers = {  # 确保 headers 在此处定义
-        "Authorization": f"Bearer {coze_api_key}",
+# 发送聊天请求
+def send_chat_request(question):
+    url = f"{BASE_URL}/chat"
+    headers = {
+        "Authorization": f"Bearer {API_TOKEN}",
         "Content-Type": "application/json"
     }
-    chat_data = {
-        "bot_id": "7426248689075028006",  # 请替换为实际的 bot_id
-        "user_id": "154643545",
+    data = {
+        "bot_id": BOT_ID,
+        "user_id": "12564489",  # 可以使用任意用户ID
         "stream": False,
         "auto_save_history": True,
-        "additional_messages": [{"role": "user", "content": prompt, "content_type": "text"}]
+        "additional_messages": [
+            {
+                "role": "user",
+                "content": question,
+                "content_type": "text"
+            }
+        ]
     }
 
-    # 发送对话请求
-    chat_response = requests.post(chat_url, headers=headers, json=chat_data)
-    chat_result = chat_response.json()
-
-    if chat_result.get("code") == 0:
-        chat_id = chat_result.get("data")["id"]
-        conversation_id = chat_result.get("data")["conversation_id"]
-        retrieve_url = f"https://api.coze.cn/v3/chat/retrieve"
-        headers = { 
-            "Authorization": f"Bearer {coze_api_key}",
-            "Content-Type": "application/json"
-        }
-        # 查看对话详情
-        retrieve_params = {
-            "conversation_id": conversation_id,
-            "chat_id": chat_id,
-        }
-        retrieve_response = requests.get(retrieve_url, headers=headers, params=retrieve_params)
-        
-        
+    response = requests.post(url, headers=headers, json=data)
+    return response.json()
 
 
+# 获取聊天消息
+def get_chat_messages(chat_id, conversation_id):
+    url = f"{BASE_URL}/chat/message/list?chat_id={chat_id}&conversation_id={conversation_id}"
+    headers = {
+        "Authorization": f"Bearer {API_TOKEN}",
+        "Content-Type": "application/json"
+    }
 
+    response = requests.get(url, headers=headers)
+    return response.json()
 
-        chat_result = retrieve_response.json()
-        msg = str(chat_result)
-        st.session_state[f"{PAGE_ID}_messages"].append({"role": "assistant", "content": msg})
-        st.chat_message("assistant").write(msg)
-    else:
-        st.error("Failed to fetch chat response.")
+def main():
+    st.title("AI 聊天机器人")
+    st.write("与智能体互动，询问问题并获取回复！")
 
-    
-# 重置按钮
-with st.sidebar:
-    if st.button("Reset Conversation"):
-        st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "Hi，这里是HeteroCat异瞳猫。如果你对我和AI有任何感兴趣的话题，欢迎━(｀∀´)ノ亻!与我交流！！！"}]
-        st.session_state.pop("conversation_id", None)
-        st.rerun()
+    # 用户输入
+    user_input = st.text_input("请输入问题：")
+
+    if st.button("发送"):
+        if user_input:
+            with st.spinner('正在获取回应...'):
+                chat_response = send_chat_request(user_input)
+                st.json(chat_response)
+
+                if "code" in chat_response and chat_response["code"] == 0 and "data" in chat_response:
+                    chat_id = chat_response["data"].get("id")
+                    conversation_id = chat_response["data"].get("conversation_id")
+
+                    if chat_id and conversation_id:
+                        # 尝试获取聊天消息，最多重试5次
+                        for attempt in range(5):
+                            print(f"尝试获取消息，第 {attempt + 1} 次")
+                            messages = get_chat_messages(chat_id, conversation_id)
+
+                            if "code" in messages and messages["code"] == 0 and "data" in messages and messages["data"]:
+                                for message in messages["data"]:
+                                    if message["role"] == "assistant" and message["type"] == "answer":
+                                        st.write(f"智能体的回答：{message['content']}")
+                                        return
+                            time.sleep(5)  # 等待5秒后重试
+
+                        st.write("已完成，但是由于streamlit cloud服务器在国外，所以扣子无法服务。本地运行已实现")
+                    else:
+                        st.write("chat_id 或 conversation_id 未在响应中找到")
+                else:
+                    st.write("发送聊天请求失败或返回格式不正确")
+        else:
+            st.warning("请输入一个问题")
+
+if __name__ == "__main__":
+    main()
+
