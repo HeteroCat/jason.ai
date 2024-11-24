@@ -27,10 +27,11 @@ def run():
             广东汕头人，22岁，来自广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
             - 《Hugging llm》项目核心贡献者之一
+            -   AI开源组织Datewhale意向成员、助教、优秀学习者
+            -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
-            -    上海交通大学AI访谈嘉宾
-            -   AI开源组织Datewhale意向成员
-            -  AI音乐MV创作者
+            -  AI音乐/AI音乐MV创作者
+            -  AI应用开发工程师/AI产品经理
 
 
 
@@ -130,21 +131,33 @@ def run():
         st.markdown("百度prompt证书")
 
     with col8:
-        st.image("Certificate/6.jpg", width=200)  # 替换为您的图片链接
+        st.image("Certificate/12.jpg", width=200)  # 替换为您的图片链接
         st.markdown("百度智能体平台开发者证书")
+    col9, col10, col11 = st.columns(3)  # 在每一列中展示一张图片
+    with col9:
+        st.image("Certificate/7.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("阿里魔搭AI智能体工程师证书")
+
+    with col10:
+        st.image("Certificate/8.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("可灵Lora微调结业证书")
+
+    with col11:
+        st.image("Certificate/9.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("AI视频获奖证书")
 
     # 工作部分
     st.write("## 工作经历")
     st.markdown(
         """
         ### 深圳跳舞兰科技有限公司--         AI工程师
-        - **time**：2024.06-至今
+        - **Time**：2024.06-至今
         - **Description**: 根据公司业务开发智能AI客服，调用大模型和AI工作流的能力构建agent智能体。
         - **Technologies**: 小程序SDK开发, agent智能体开发，AI组件开发
         
         
         ### 广州普瑞纯证医疗科技有限公司--     提示词工程师（实习）
-        - **time**：2023.09-2023.11
+        - **Time**：2023.09-2023.11
         - **Description**: 
 
         - - 1.对公司的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品，实现公司业务增量和新的发展突破。
@@ -152,7 +165,7 @@ def run():
         - **Technologies**: prompt 工程开发，产品测试，flask开发，SQL
 
         ### 广东亚太创新经济研究院--      数据治理工程师（实习）
-        - **time**：2023.05-2023.07
+        - **Time**：2023.05-2023.07
         - **Description**: 主要负责将国民经济行业分类和国标专利 IPC 这两个表进行匹配，包括通过 Python 代码进行数据清洗和整合、数据分析最后通过模糊算法进行匹配。
         - **Technologies**: Python，Excel，正则表达式
         

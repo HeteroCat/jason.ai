@@ -2,12 +2,14 @@ import openai
 import streamlit as st
 
 
-with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+# 硬编码 OpenAI API Key
+OPENAI_API_KEY = "sk-proj-vWi7XXa2zSfl9oWzh4mlT3BlbkFJVcoFGG5klAnO5mlwYC6B"
 
+# 设置 OpenAI API Key
+openai_api_key = OPENAI_API_KEY
 
 st.title("💬 game Chatbot")
-st.caption("🚀 A streamlit chatbot powered by OpenAI LLM")
+st.caption("🚀 A streamlit chatbot powered by OpenAI")
 
 # 在文件开头添加页面标识
 PAGE_ID = "game_chat"
@@ -23,9 +25,7 @@ for message in st.session_state[f"{PAGE_ID}_messages"]:
 
 # 修改OpenAI调用部分
 if prompt := st.chat_input():
-    if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
-        st.stop()
+    
 
     openai.api_key = openai_api_key
     st.session_state[f"{PAGE_ID}_messages"].append({"role": "user", "content": prompt})
