@@ -18,12 +18,17 @@ if f"{PAGE_ID}_conversation_id" not in st.session_state:
 messages = st.session_state[f"{PAGE_ID}_messages"]
 conversation_id = st.session_state[f"{PAGE_ID}_conversation_id"]
 
-# 嵌入 API Key（直接硬编码）
-API_KEY = "app-ZQZYF6F5o3cDFugpWjkZjPql"
+# 侧边栏配置
+with st.sidebar:
+    api_key = st.text_input("Dify API Key", key="chatbot_api_key", type="password")
+    if st.button("Reset Conversation"):
+        st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
+        st.session_state[f"{PAGE_ID}_conversation_id"] = None
+        st.rerun()
 
 # 主标题
 st.title("💬 Dify 007Chatbot")
-st.caption("🚀 A Streamlit chatbot powered by Dify")
+st.caption("🚀 A Streamlit chatbot powered by Dify AI")
 
 # 显示消息历史
 for message in messages:
@@ -32,8 +37,8 @@ for message in messages:
 
 # 聊天输入和处理
 if prompt := st.chat_input("What would you like to know?"):
-    if not API_KEY:
-        st.error("API Key is missing. Please check the code.")
+    if not api_key:
+        st.info("Please add your Dify API key to continue.")
         st.stop()
 
     # 添加用户消息到界面和历史记录
@@ -43,7 +48,7 @@ if prompt := st.chat_input("What would you like to know?"):
 
     # 准备发送到 Dify API 的请求
     headers = {
-        'Authorization': f'Bearer {API_KEY}',
+        'Authorization': f'Bearer {api_key}',
         'Content-Type': 'application/json',
     }
 
@@ -51,7 +56,7 @@ if prompt := st.chat_input("What would you like to know?"):
         "inputs": {},
         "query": prompt,
         "response_mode": "blocking",
-        "user": "user-123",
+        "user": "user456",
     }
 
     if conversation_id:
@@ -82,11 +87,3 @@ if prompt := st.chat_input("What would you like to know?"):
     except requests.exceptions.RequestException as e:
         st.error("An error occurred during the API request.")
         st.sidebar.text_area("Error Details", str(e))
-
-
-# 修改重置按钮
-with st.sidebar:
-    if st.button("Reset Conversation"):
-        st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
-        st.session_state[f"{PAGE_ID}_conversation_id"] = None
-        st.rerun()
