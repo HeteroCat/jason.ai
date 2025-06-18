@@ -1,6 +1,4 @@
-# Jason's AI World
-
-This repository contains a personal portfolio and AI demo collection built with [Streamlit](https://streamlit.io/). The project showcases various experiments with large language models and generative tools. Each demo is accessible as a page in the Streamlit app.
+# welcome to Jason's AI World
 
 ## Features
 
@@ -49,4 +47,3 @@ The navigation sidebar lists all available demo pages.
 └── images and other media files
 ```
 
-Feel free to explore the code and customize the demos for your own experiments.
