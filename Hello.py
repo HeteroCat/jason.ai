@@ -37,7 +37,7 @@ def run():
 
             欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和音乐[HeteroCat401](https://www.douyin.com/user/self)
 
-            也欢迎试玩左侧边栏的AI Dmeo，更多Dmeo在开发中。
+            也欢迎试玩左侧边栏的AI Demo，更多Demo在开发中。
             """
         )
         
