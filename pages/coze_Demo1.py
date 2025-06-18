@@ -7,14 +7,16 @@ import time
 
 # API 配置
 BOT_ID = "7426248689075028006"
-API_TOKEN = "pat_rcEC9HZiRrsznSxTPzsS9tt3QonVshcHpABnjOXm7pXizy7izCoHzLr5G0Tb04k7"
 BASE_URL = "https://api.coze.cn/v3"
 
+with st.sidebar:
+    API_TOKEN = st.text_input("Coze API Token", key="coze_api_key", type="password")
+
 # 发送聊天请求
-def send_chat_request(question):
+def send_chat_request(question, api_token):
     url = f"{BASE_URL}/chat"
     headers = {
-        "Authorization": f"Bearer {API_TOKEN}",
+        "Authorization": f"Bearer {api_token}",
         "Content-Type": "application/json"
     }
     data = {
@@ -36,10 +38,10 @@ def send_chat_request(question):
 
 
 # 获取聊天消息
-def get_chat_messages(chat_id, conversation_id):
+def get_chat_messages(chat_id, conversation_id, api_token):
     url = f"{BASE_URL}/chat/message/list?chat_id={chat_id}&conversation_id={conversation_id}"
     headers = {
-        "Authorization": f"Bearer {API_TOKEN}",
+        "Authorization": f"Bearer {api_token}",
         "Content-Type": "application/json"
     }
 
@@ -54,9 +56,13 @@ def main():
     user_input = st.text_input("请输入问题：")
 
     if st.button("发送"):
+        if not API_TOKEN:
+            st.info("Please add your Coze API Token to continue.")
+            st.stop()
+
         if user_input:
             with st.spinner('正在获取回应...'):
-                chat_response = send_chat_request(user_input)
+                chat_response = send_chat_request(user_input, API_TOKEN)
                 st.json(chat_response)
 
                 if "code" in chat_response and chat_response["code"] == 0 and "data" in chat_response:
@@ -67,7 +73,7 @@ def main():
                         # 尝试获取聊天消息，最多重试5次
                         for attempt in range(5):
                             print(f"尝试获取消息，第 {attempt + 1} 次")
-                            messages = get_chat_messages(chat_id, conversation_id)
+                            messages = get_chat_messages(chat_id, conversation_id, API_TOKEN)
 
                             if "code" in messages and messages["code"] == 0 and "data" in messages and messages["data"]:
                                 for message in messages["data"]:
