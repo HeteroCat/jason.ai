@@ -233,7 +233,7 @@ def run():
             "Openai": 70,
             "NumPy": 65,
             "Streamlit": 60,
-            "Flash": 60,
+            "Flask": 60,
             "PyTorch": 50
         }
 
