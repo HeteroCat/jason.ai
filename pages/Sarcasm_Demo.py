@@ -2,10 +2,10 @@ import streamlit as st
 import requests
 
 # 设置页面配置
-st.set_page_config(page_title="Dify 007Chatbot", page_icon="💬")
+st.set_page_config(page_title="Sarcasm Chatbot", page_icon="💬")
 
 # 页面标识
-PAGE_ID = "dify_chat"
+PAGE_ID = "sarcasm_chat"
 
 # 初始化状态
 if f"{PAGE_ID}_messages" not in st.session_state:
@@ -27,7 +27,7 @@ with st.sidebar:
         st.rerun()
 
 # 主标题
-st.title("💬 Dify 007Chatbot")
+st.title("💬 Sarcasm Chatbot")
 st.caption("🚀 A Streamlit chatbot powered by Dify AI")
 
 # 显示消息历史
