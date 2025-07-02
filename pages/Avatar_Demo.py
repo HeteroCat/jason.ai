@@ -50,7 +50,7 @@ def get_chat_messages(chat_id, conversation_id, api_token):
 
 def main():
     st.title("💬AI 分身聊天机器人")
-    st.write("🤔与我的分身智能体互动，询问问题并获取回复！")
+    st.write("🥰与我的coze分身智能体互动，询问问题并获取回复！")
 
     # 用户输入
     user_input = st.text_input("请输入问题：")

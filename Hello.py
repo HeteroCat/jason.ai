@@ -24,18 +24,17 @@ def run():
         st.markdown(
             """
             ### 我叫黄佩林，Jason.
-            广东汕头人，22岁，来自广东财经大学，数学与应用数学专业
+            广东汕头人，23岁，毕业于广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
-            - 《Hugging llm》项目核心贡献者之一
+            - 3k star《Hugging llm》开源项目核心贡献者之一
             -   AI开源组织Datewhale意向成员、助教、优秀学习者
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
-            -  AI音乐/AI音乐MV创作者
-            -  AI应用开发工程师/AI产品经理
+            -  职业：AI应用开发工程师
+            -  探索：AI音乐人
 
 
-
-            欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和音乐[HeteroCat401](https://www.douyin.com/user/self)
+            欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和音乐[Butterstorm](https://suno.com/@heterocat808)
 
             也欢迎试玩左侧边栏的AI Demo，更多Demo在开发中。
             """
@@ -47,7 +46,7 @@ def run():
         """
        我的研究兴趣在于大语言模型与各行各业的结合应用，运用大语言模型创作不可思议的作品。 我目前是在深圳某科技公司从事AI工作。 
        
-       我的研究重点是大型语言模型，如基于LLM的代理、基于LLM API的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型是我未来的研究方向。 我对 LLM 有着浓厚的兴趣， 提示prompt工程、优化策略、Agent智能体、应用程序开发以及与多模态相关的其他方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
+       我的研究重点是大型语言模型，如基于LLM的代理、基于LLM API的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型是我未来的研究方向。 我对 LLM 有着浓厚的兴趣， prompt工程、数据可视化、Agent智能体、应用程序开发以及与多模态相关等方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
         """
     )
     # 项目部分
@@ -74,7 +73,7 @@ def run():
         - **项目获奖**: 2023年百度大模型应用创新挑战赛-最佳创意作品奖
         - **项目介绍**: 使用 ChatGPT 自动运行量化交易系统听起来很酷，不是吗？使用AGI（通用人工智能）构建一个完整的量化交易系统仍然相当具有挑战性。然而，幸运的是，通过大语言模型似乎有一种可行的方法来使用现有的成熟量化交易系统，我们正在研究它。借助langchain的控制流程，我们使用ChatGPT自动编写和回测量化交易策略，并提供文档问答功能。目前，Freqtrade定量系统已经实现了相当全面的工作流程。此外，它还支持中国的 AkShare 和 Vnpy 的部分功能。​
         - **主要贡献**：我主要负责数字模型优化以及系统流程优化。
-        - **项目链接**: [《AsyncTrader》](https://github.com/dumengru1997/AsyncTrader?tab=readme-ov-file)
+        - **项目链接**: [《AsyncTrader》](https://github.com/HeteroCat/AsyncTrader)
         """
     )
 
@@ -84,7 +83,7 @@ def run():
         """
         ### 《HeteroCat》
         - **项目获奖**: 2023年度稀土掘金人气作者
-        - **项目介绍**: 从2022年7月份开始，我在稀土掘金社区做人工智能相关的学习分享和数据分析，数据挖掘相关的技术博客，目前累加阅读量 3.6w+, 其中文章《我眼中的 ChatGPT》曾获得全站第三的热度，《AI 爆发的一年 2023 总结》在掘金 2023 年度技术盘点征文获奖，同时加入掘金社区人工智能创作者扶持计划。并获得 2023 年掘金社区年度人气作者。
+        - **项目介绍**: 从2022年7月份开始，我在稀土掘金社区做人工智能相关的学习分享和数据分析，数据挖掘相关的技术博客，目前累加阅读量 5w+, 其中文章《我眼中的 ChatGPT》曾获得全站第三的热度，《AI 爆发的一年 2023 总结》在掘金 2023 年度技术盘点征文获奖，同时加入掘金社区人工智能创作者扶持计划。并获得 2023 年掘金社区年度人气作者。
         - **代表文章**： 
         - [《AI 爆发的一年 2023 总结》](https://juejin.cn/post/7317908960756662306)
         - [《一些更丰富的prompt技巧--from GitHub》](https://juejin.cn/post/7283426137968525312)
@@ -102,7 +101,9 @@ def run():
         - **参与活动**：《动手学数据分析》、《动手学深度学习》、《动手学AI视频生成》等等
         - **组织贡献**： 
         - [《hugging llm》](https://github.com/datawhalechina/hugging-llm)
+        - [《coze-for-kids》](https://github.com/leafoo24/coze-for-kids)
         - [《黄佩林的AI成长之路》](https://mp.weixin.qq.com/s/Lj_Wje3B4CkpH6SQT8fd1Q)
+        
         
         - **开源链接**: [Datawhale](https://github.com/datawhalechina)
         """
@@ -213,7 +214,7 @@ def run():
     st.markdown("### 编程语言")
     languages = {
             "Prompt": 95,
-            "Python": 80,
+            "Python": 90,
             "Matlab": 70,
             "C": 65,
             "R": 65,
@@ -231,8 +232,8 @@ def run():
             "Matplotlib": 85,
             "Pandas": 80,
             "Openai": 70,
-            "NumPy": 65,
-            "Streamlit": 60,
+            "Langchain": 65,
+            "FastAPI": 60,
             "Flask": 60,
             "PyTorch": 50
         }
@@ -246,11 +247,11 @@ def run():
     st.markdown("### 工具")
     tools = {
             "ChatGPT": 90,
-            "文心一言": 90,
+            "豆包": 90,
             "coze": 75,
             "Suno": 70,
             "即梦":65,
-            "Midjourney": 60
+            "可灵": 60
            
         }
 
@@ -264,7 +265,7 @@ def run():
         """
         - **phone**: 19830512935
         - **Email**: 1580823387@qq.com
-        - **LinkedIn**: [MY LinkedIn](https://www.linkedin.com/in/%E4%BD%A9%E6%9E%97-%E9%BB%84-6650b4264/)
+        - **Douyin**: [Butterstorm](https://www.douyin.com/user/MS4wLjABAAAAvBkZt534BdaLk_KUZpdWBa3CzGgL-nvlMNZKWHD054U?previous_page=app_code_link)
         - **GitHub**: [HeteroCat](https://github.com/HeteroCat)
         """
     )
