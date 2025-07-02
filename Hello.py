@@ -1,5 +1,6 @@
 
 import streamlit as st
+import pandas as pd
 from streamlit.logger import get_logger
 
 LOGGER = get_logger(__name__)
@@ -146,6 +147,18 @@ def run():
     with col11:
         st.image("Certificate/9.jpg", width=200)  # 替换为您的图片链接
         st.markdown("AI视频获奖证书")
+    col12, col13, col14 = st.columns(3)  # 在每一列中展示一张图片
+    with col12:
+        st.image("Certificate/FT.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("讯飞Fine-tuning微调证书")
+
+    with col13:
+        st.image("Certificate/AIcoding.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("豆包AI coding证书")
+
+    with col14:
+        st.image("Certificate/yindao.jpg", width=200)  # 替换为您的图片链接
+        st.markdown("影刀AI power证书")
 
     # 工作部分
     st.write("## 工作经历")
@@ -153,11 +166,29 @@ def run():
         """
         ### 深圳跳舞兰科技有限公司--         AI工程师
         - **Time**：2024.06-至今
-        - **Description**: 根据公司业务开发智能AI客服，调用大模型和AI工作流的能力构建agent智能体。
-        - **Technologies**: 小程序SDK开发, agent智能体开发，AI组件开发
+        - **Description**: 根据公司业务开发智能AI客服，AI画布，AI数据分析，AI自动化和AI营销等agent智能体。
+        - **Technologies**: 智能体开发(扣子/dify)，小程序AI开发, 数据后台开发
+        """
+    )
+    st.markdown("项目一：[业务AI化系统](http://ai.xiangbinmeigui.com/)")
+    data = pd.DataFrame({
+        '内容': ['六项具体业务相关内容'],
+        '原来所需时间': ["12h"],
+        '优化后时间': ['1.2h'],
+        '提升效率': ['约90%']
+    })
+
+    st.dataframe(data)
+    st.markdown("项目二：[花美家AI](http://huameijia.com.cn/)")
+    st.video("https://youtu.be/2xcdmlqJjMM?si=J7JLfSu39s6ACbys")
+    st.markdown("项目三：[AI画布](https://www.coze.cn/store/project/7487864472749490202)")
+    st.image("AIhuabu.png", width=700)
+    st.markdown(
+        """
+      
         
         
-        ### 广州普瑞纯证医疗科技有限公司--     提示词工程师（实习）
+        ### 广州普瑞纯证医疗科技有限公司--  提示词工程师（实习）
         - **Time**：2023.09-2023.11
         - **Description**: 
 
