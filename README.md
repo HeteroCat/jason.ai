@@ -9,9 +9,9 @@ A Streamlit-based personal portfolio showcasing various AI experiments and demos
 - **Avatar Demo** (`pages/Avatar_Demo.py`)
   - Chat with a Coze-powered digital persona
 - **Data Demo** (`pages/Data_Demo.py`)
-  - Upload PDFs for Q&A and data visualization powered by LangChain and FAISS
+  - Upload PDFs or CSV for Q&A and data visualization powered by LangChain and FAISS
 - **Sarcasm Demo** (`pages/Sarcasm_Demo.py`)
-  - Example chatbot with a snarky personality
+  - Example chatbot with a snarky personality powered by Dify
 - **Game Chat Demo** (`pages/gamechat_Demo.py`)
   - Interactive history adventure using the OpenAI API
 
