@@ -20,7 +20,7 @@ conversation_id = st.session_state[f"{PAGE_ID}_conversation_id"]
 
 # 侧边栏配置
 with st.sidebar:
-    api_key = st.text_input("Dify API Key", key="chatbot_api_key", type="password")
+    api_key = st.text_input("Dify API Key", key="sarcasm_dify_api_key", type="password")
     if st.button("Reset Conversation"):
         st.session_state[f"{PAGE_ID}_messages"] = [{"role": "assistant", "content": "你好! 你知道的我不好惹?"}]
         st.session_state[f"{PAGE_ID}_conversation_id"] = None
