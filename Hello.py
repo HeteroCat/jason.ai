@@ -27,7 +27,7 @@ def run():
             ### 我叫黄佩林，Jason.
             广东汕头人，23岁，毕业于广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
-            - WaytoAGI超创-开发者
+            - WaytoAGI超创-开发者,TRAE SOLO 内测用户
             -   AI开源组织Datewhale意向成员、助教、优秀学习者
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
