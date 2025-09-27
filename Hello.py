@@ -32,7 +32,7 @@ def run():
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
             -  职业：Agent开发工程师
-            -  探索：AI音乐人
+            -  探索：AI艺术家
 
 
             欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和音乐[Butterstorm](https://suno.com/@heterocat808)
