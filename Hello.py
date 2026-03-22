@@ -176,36 +176,66 @@ def run():
     st.write("## 工作经历")
     st.markdown(
         """
-        ### 深圳市探知未来科技有限公司--         AI工程师
+        ### 深圳市探知未来科技有限公司--         Agent工程师
         - **Time**：2024.06-至今
-        - **Description**: 根据公司业务开发智能AI客服，AI画布，AI数据分析，AI自动化和AI营销等agent智能体。
-        - **Technologies**: 智能体开发(扣子/dify)，小程序AI开发, 数据后台开发
+        - **Description**: 根据公司业务开发智能AI问数，AI写作，AI数据分析，AI自动化和AI批改等agent智能体。
+        - **Technologies**: 工作流智能体开发(FastGPT/扣子/Dify/N8N)，skills Agents技能开发, 数据后台开发
         """
     )
-    st.markdown("项目一：[业务AI化系统](http://ai.xiangbinmeigui.com/)")
-    data = pd.DataFrame({
-        '内容': ['六项具体业务相关内容'],
-        '原来所需时间': ["12h"],
-        '优化后时间': ['1.2h'],
-        '提升效率': ['约90%']
-    })
+    st.markdown("项目一：科研论文写作skills开发")
+    st.markdown(
+        """
+        - **Description**: 
+            - 1.基于Claude Code开发科研论文写作的AI辅助技能，构建结构化写作流程的skill体系，包括文献检索、大纲描述、数据分析等模块的智能生成与润色。
+            - 2.设计并优化学术论文的格式化输出模板，支持多种期刊格式的自动适配与引用管理，提升科研人员的写作效率与规范性。
+            - 3.搭建用户反馈收集系统，持续迭代模型输出质量，建立论文写作的知识库与最佳实践案例库。
+        - **Technologies**: Agentic Engineering, Prompt, Python, Claude code, 学术写作规范
+        """
+    )
 
-    st.dataframe(data)
-    st.markdown("项目二：[花美家AI](http://huameijia.com.cn/)")
-    st.video("https://youtu.be/2xcdmlqJjMM?si=J7JLfSu39s6ACbys")
-    st.markdown("项目三：[AI画布](https://www.coze.cn/store/project/7487864472749490202)")
-    st.image("AIhuabu.png", width=700)
+    st.markdown("项目二：LlamaFactory大模型微调课程")
+    st.markdown(
+        """
+        - **Description**: 
+            - 1.基于LlamaFactory框架开发面向技术人员的大模型微调实战课程，涵盖LoRA、QLoRA、全参数微调等技术的原理讲解与代码实践。
+            - 2.设计Claude Code指令集操作llama factory进行大模型微调，包括数据预处理、模型训练、效果评估与部署上线的完整Pipeline。
+            - 3.编写并录制了课程配套的完整文档与视频教程，支持学员在线完成模型微调与效果实验。
+        - **Technologies**: LlamaFactory, LoRA/QLoRA, PyTorch, Claude code, 华为昇腾, 数据治理
+        """
+    )
+
+    st.markdown("项目三：智能问数智能体")
+    st.markdown(
+        """
+        - **Description**: 
+            - 1.开发基于自然语言交互的数据查询和可视化分析智能体，支持用户通过对话方式完成复杂数据分析和报表生成。
+            - 2.构建数据库表结构调用理解工作流模块，实现自动的表关系识别、字段语义匹配与SQL语句生成优化。
+            - 3.集成MCP进行数据可视化，多轮对话上下文管理，支持追问、澄清与可视化图表生成，降低非技术人员的数据获取门槛。
+        - **Technologies**: MYSQL, FastGPT/Dify, MCP, 数据可视化, RAG
+        """
+    )
+
+    st.markdown("项目四：智能批改智能体")
+    st.markdown(
+        """
+        - **Description**: 
+            - 1.开发面向教育场景的作业智能批改系统，实现自动评分、错误标注、改进建议生成与知识点总结分析建议。
+            - 2.构建多维度评估体系（内容完整性、逻辑结构、语言表达、格式规范），支持主观题的语义理解与个性化反馈。
+            - 3.设计教师审核与人工修正工作流，通过人机协同持续优化批改模型的准确率与反馈质量。
+        - **Technologies**:  Prompt chain, RAG知识库, OCR, FastGPT
+        """
+    )   
+    
     st.markdown(
         """
       
         
         
-        ### 广州普瑞纯证医疗科技有限公司--  提示词工程师（实习）
+        ### 广州普瑞纯证医疗科技公司--  提示词工程师（实习）
         - **Time**：2023.09-2023.11
         - **Description**: 
-
-        - - 1.医疗专业文本生成AI产品的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品，实现公司业务增量和新的发展突破。
-        - - 2.后端接口开发:承担了公司一部分邮件推送系统和订阅系统的接口开发。
+             - 1.医疗专业文本生成AI产品的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品，实现公司业务增量和新的发展突破。
+             - 2.后端接口开发:承担了公司一部分邮件推送系统和订阅系统的接口开发。
         - **Technologies**: prompt 工程开发，产品测试，flask开发，SQL
 
         ### 广东亚太创新经济研究院--      数据治理工程师（实习）
