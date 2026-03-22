@@ -27,15 +27,15 @@ def run():
             ### 我叫黄佩林，Jason.
             广东汕头人，24岁，毕业于广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
-            - WaytoAGI超创-开发者,TRAE SOLO 内测用户
-            -   AI开源组织Datewhale意向成员、助教、优秀学习者
+            - 《Hello-Agents》项目核心贡献者(Trending TOP1)
+            -   AI开源组织Datewhale成员、助教、优秀学习者
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
             -  职业：Agent开发工程师
-            -  探索：AI艺术家
+            
 
 
-            欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和音乐[Butterstorm](https://suno.com/@heterocat808)
+            欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)
 
             也欢迎试玩左侧边栏的AI Demo，更多Demo在开发中。
             """
@@ -45,14 +45,26 @@ def run():
     st.write("## 研究方向")
     st.markdown(
         """
-       我的研究兴趣在于大语言模型与各行各业的结合应用，运用大语言模型创作不可思议的作品。 我目前是在深圳某科技公司从事AI工作。 
+       我的研究兴趣在于大语言模型与各行各业的结合应用，运用大语言模型创作不可思议的作品。 我目前是在深圳探知未来科技公司从事AI工作。 
        
-       我的研究重点是大型语言模型，如基于LLM的代理、基于LLM API的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型是我未来的研究方向。 我对 LLM 有着浓厚的兴趣， prompt工程、数据可视化、Agent智能体、应用程序开发以及与多模态相关等方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
+       我的研究重点是大型语言模型与智能体，如基于LLM的代理、基于LLM API的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型与智能体是我未来的研究方向。 我对 LLM 有着浓厚的兴趣， prompt工程、数据可视化、Agent智能体、应用程序开发以及与多模态相关等方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
         """
     )
     # 项目部分
     st.write("## 项目经历")
+
+    st.image("hello-agents.png", width=700)
     
+    st.markdown(
+        """
+        ### 《Hello-Agents》
+        - **项目背景**: 如果说 2024 年是"百模大战"的元年，那么 2025/26 年无疑开启了"Agent 元年"。技术的焦点正从训练更大的基础模型，转向构建更聪明的智能体应用。为此，我们发起了 Hello-Agents 项目，希望能为大家提供一份从零开始、理论与实战并重的智能体系统构建指南。
+        - **项目介绍**: 如今 Agent 构建主要分为两派，一派是 Dify，Coze，n8n 这类软件工程类 Agent，其本质是流程驱动的软件开发，LLM 作为数据处理的后端；另一派则是 AI 原生的 Agent，即真正以 AI 驱动的 Agent。本教程旨在带领大家深入理解并构建——真正的全面的 AI Agent。我们相信，最好的学习方式就是动手实践。希望学习者能够从一名大语言模型的"使用者"，蜕变为一名智能体系统的"构建者"。
+        - **主要贡献**：我主要负责撰写第五章内容，涵盖扣子（Coze）智能体和 Dify 智能体的搭建实践。从页面介绍到模型选择，从开发流程讲解到提示词和配置示范，完整的介绍了一整套当前主流的低代码平台智能体开发范式。以及vide-coding了一个方便国内网络服务的教程Cookbook网站
+        - **项目链接**: [《Hello-Agents》](https://github.com/datawhalechina/hello-agents) [《Cookbook》](https://book.heterocat.com.cn)
+        """
+    )
+
     st.image("hugging llm 001.png", width=700)
     
     st.markdown(
@@ -78,13 +90,13 @@ def run():
         """
     )
 
-    st.image("new_juejin2.png", width=700)
+    st.image("juejin2026.png", width=700)
     
     st.markdown(
         """
         ### 《HeteroCat》
         - **项目获奖**: 2023年度稀土掘金人气作者
-        - **项目介绍**: 从2022年7月份开始，我在稀土掘金社区做人工智能相关的学习分享和数据分析，数据挖掘相关的技术博客，目前累加阅读量 5w+, 其中文章《我眼中的 ChatGPT》曾获得全站第三的热度，《AI 爆发的一年 2023 总结》在掘金 2023 年度技术盘点征文获奖，同时加入掘金社区人工智能创作者扶持计划。并获得 2023 年掘金社区年度人气作者。
+        - **项目介绍**: 从2022年7月份开始，我在稀土掘金社区做人工智能相关的学习分享和数据分析，数据挖掘相关的技术博客，目前累加阅读量 6w+, 其中文章《我眼中的 ChatGPT》曾获得全站第三的热度，《AI 爆发的一年 2023 总结》在掘金 2023 年度技术盘点征文获奖，同时加入掘金社区人工智能创作者扶持计划。并获得 2023 年掘金社区年度人气作者。
         - **代表文章**： 
         - [《AI 爆发的一年 2023 总结》](https://juejin.cn/post/7317908960756662306)
         - [《一些更丰富的prompt技巧--from GitHub》](https://juejin.cn/post/7283426137968525312)
@@ -102,7 +114,7 @@ def run():
         - **参与活动**：《动手学数据分析》、《动手学深度学习》、《动手学AI视频生成》等等
         - **组织贡献**： 
         - [《hugging llm》](https://github.com/datawhalechina/hugging-llm)
-        - [《coze-for-kids》](https://github.com/leafoo24/coze-for-kids)
+        - [《hello-agents》](https://github.com/datawhalechina/hello-agents)
         - [《黄佩林的AI成长之路》](https://mp.weixin.qq.com/s/Lj_Wje3B4CkpH6SQT8fd1Q)
         
         
@@ -138,7 +150,7 @@ def run():
     col9, col10, col11 = st.columns(3)  # 在每一列中展示一张图片
     with col9:
         st.image("Certificate/7.jpg", width=200)  # 替换为您的图片链接
-        st.markdown("阿里魔搭AI智能体工程师证书")
+        st.markdown("魔搭社区AI智能体工程师证书")
 
     with col10:
         st.image("Certificate/8.jpg", width=200)  # 替换为您的图片链接
@@ -164,7 +176,7 @@ def run():
     st.write("## 工作经历")
     st.markdown(
         """
-        ### 深圳跳舞兰科技有限公司--         AI工程师
+        ### 深圳市探知未来科技有限公司--         AI工程师
         - **Time**：2024.06-至今
         - **Description**: 根据公司业务开发智能AI客服，AI画布，AI数据分析，AI自动化和AI营销等agent智能体。
         - **Technologies**: 智能体开发(扣子/dify)，小程序AI开发, 数据后台开发
@@ -192,7 +204,7 @@ def run():
         - **Time**：2023.09-2023.11
         - **Description**: 
 
-        - - 1.对公司的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品，实现公司业务增量和新的发展突破。
+        - - 1.医疗专业文本生成AI产品的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品，实现公司业务增量和新的发展突破。
         - - 2.后端接口开发:承担了公司一部分邮件推送系统和订阅系统的接口开发。
         - **Technologies**: prompt 工程开发，产品测试，flask开发，SQL
 
@@ -247,7 +259,7 @@ def run():
             "Prompt": 95,
             "Python": 90,
             "Matlab": 70,
-            "C": 65,
+            "JS/TS": 65,
             "R": 65,
             
         }
@@ -264,7 +276,7 @@ def run():
             "Pandas": 80,
             "Openai": 70,
             "Langchain": 65,
-            "FastAPI": 60,
+            "FastAPI": 65,
             "Flask": 60,
             "PyTorch": 50
         }
@@ -277,10 +289,10 @@ def run():
         # 工具
     st.markdown("### 工具")
     tools = {
-            "ChatGPT": 90,
-            "豆包": 90,
-            "coze": 75,
-            "Suno": 70,
+            "Claude code": 90,
+            "Trae": 90,
+            "Coze": 85,
+            "Dify": 70,
             "即梦":65,
             "可灵": 60
            
