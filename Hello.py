@@ -176,8 +176,8 @@ def run():
     st.write("## 工作经历")
     st.markdown(
         """
-        ### 深圳市探知未来科技有限公司--         Agent工程师
-        - **Time**：2024.06-至今
+        ### 深圳市华云科技研发有限公司--         Agent开发工程师
+        - **Time**：2025.08-至今
         - **Description**: 根据公司业务开发智能AI问数，AI写作，AI数据分析，AI自动化和AI批改等agent智能体。
         - **Technologies**: 工作流智能体开发(FastGPT/扣子/Dify/N8N)，skills Agents技能开发, 数据后台开发
         """
@@ -225,10 +225,31 @@ def run():
         - **Technologies**:  Prompt chain, RAG知识库, OCR, FastGPT
         """
     )   
+    st.markdown(
+        """
+        ### 深圳跳舞兰科技有限公司--         AI工程师
+        - **Time**：2024.06-2025.07
+        - **Description**: 根据公司业务开发智能AI客服，AI画布，AI数据分析，AI自动化和AI营销等agent智能体。
+        - **Technologies**: 智能体开发(扣子/dify)，小程序AI开发, 数据后台开发
+        """
+    )
+    st.markdown("项目一：[业务AI化系统](http://ai.xiangbinmeigui.com/)")
+    data = pd.DataFrame({
+        '内容': ['六项具体业务相关内容'],
+        '原来所需时间': ["12h"],
+        '优化后时间': ['1.2h'],
+        '提升效率': ['约90%']
+    })
+
+    st.dataframe(data)
+    st.markdown("项目二：[花美家AI](http://huameijia.com.cn/)")
+    st.video("https://www.youtube.com/watch?v=2xcdmlqJjMM")
+    st.markdown("项目三：[AI画布](https://www.coze.cn/store/project/7487864472749490202)")
+    st.image("AIhuabu.png", width=700)
     
     st.markdown(
         """
-        ### 深圳市探知未来科技有限公司--  提示词工程师（实习）
+        ### 广州普瑞纯证医疗科技有限公司 --  提示词工程师（实习）
         - **Time**：2023.06-2024.06
         - **Description**: 
              - 1.医疗专业文本生成AI产品的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品。
