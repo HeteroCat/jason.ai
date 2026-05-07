@@ -193,7 +193,7 @@ def run():
         """
     )
 
-    st.markdown("项目二：LlamaFactory大模型微调课程")
+    st.markdown("项目二：LlamaFactory大模型微调")
     st.markdown(
         """
         - **Description**: 
