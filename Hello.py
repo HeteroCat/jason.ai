@@ -27,7 +27,7 @@ def run():
             ### 我叫黄佩林，Jason.
             广东汕头人，24岁，毕业于广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
-            - 《Hello-Agents》项目核心贡献者(Trending TOP1)
+            - 《Hello-Agents》项目核心贡献者(Trending TOP1，40k+star)
             -   AI开源组织Datewhale成员、助教、优秀学习者
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
@@ -182,14 +182,14 @@ def run():
         - **Technologies**: 工作流智能体开发(FastGPT/扣子/Dify/N8N)，skills Agents技能开发, 数据后台开发
         """
     )
-    st.markdown("项目一：科研论文写作skills开发")
+    st.markdown("项目一：生物科研论文写作 Harness 工程开发")
     st.markdown(
         """
         - **Description**: 
             - 1.基于Claude Code开发科研论文写作的AI辅助技能，构建结构化写作流程的skill体系，包括文献检索、大纲描述、数据分析等模块的智能生成与润色。
             - 2.设计并优化学术论文的格式化输出模板，支持多种期刊格式的自动适配与引用管理，提升科研人员的写作效率与规范性。
             - 3.搭建用户反馈收集系统，持续迭代模型输出质量，建立论文写作的知识库与最佳实践案例库。
-        - **Technologies**: Agentic Engineering, Prompt, Python, Claude code, 学术写作规范
+        - **Technologies**: Agentic Engineering, skills, mcps, hooks, Claude code, 学术写作规范
         """
     )
 
