@@ -25,19 +25,23 @@ def run():
         st.markdown(
             """
             ### 我叫黄佩林，Jason.
-            广东汕头人，24岁，毕业于广东财经大学，数学与应用数学专业
+            广东汕头人，25岁，毕业于广东财经大学，数学与应用数学专业
             - 《ChatGPT原理与应用开发》共创作者
-            - 《Hello-Agents》项目核心贡献者(Trending TOP1，40k+star)
+            - 《Hello-Agents》项目核心贡献者(TOP1社区明星项目，60k+stars)
+            -  Hello-Agents-TS 多智能体开发框架作者
             -   AI开源组织Datewhale成员、助教、优秀学习者
+            -   百度大模型挑战赛最佳创意奖
+            -   阿里百炼 AI 智能体签约创作者
+            -   AI 微电影黑客松亚军
             -   上海交通大学AI访谈嘉宾
             -   稀土掘金社区AI人气作者
-            -  职业：Agent开发工程师
+            -  职业：Agent开发工程师、AIGC 创作者
             
 
 
-            欢迎访问我的博客[Hetero Cat](https://juejin.cn/user/2221479480010573)
+            欢迎访问我的技术博客[Hetero Cat](https://juejin.cn/user/2221479480010573)和自媒体频道[Jason](https://www.xiaohongshu.com/user/profile/5f43082c00000000010079c8)
 
-            也欢迎试玩左侧边栏的AI Demo，更多Demo在开发中。
+            欢迎交流AI 应用落地，更多Demo在开发中。
             """
         )
         
@@ -45,9 +49,9 @@ def run():
     st.write("## 研究方向")
     st.markdown(
         """
-       我的研究兴趣在于大语言模型与各行各业的结合应用，运用大语言模型创作不可思议的作品。 我目前是在深圳探知未来科技公司从事AI工作。 
+       我的研究兴趣在于大语言模型与各行各业的结合应用，运用大语言模型创作不可思议的作品。 我目前是在深圳某电商公司从事AI工作。 
        
-       我的研究重点是大型语言模型与智能体，如基于LLM的代理、基于LLM API的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型与智能体是我未来的研究方向。 我对 LLM 有着浓厚的兴趣， prompt工程、数据可视化、Agent智能体、应用程序开发以及与多模态相关等方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
+       我的研究重点是大型语言模型与智能体，如基于LLM的代理、基于 Agent runningtime 的应用开发、基于LLM的行业或者公司业务的智能升级优化等。大型语言模型与智能体是我未来的研究方向。 我对 Agent 有着浓厚的兴趣， Harness工程、数据可视化、AI应用程序开发以及与多模态相关等方面。 我一直积极参与各种与LLM相关的开源项目，并获得了一些经验。
         """
     )
     # 项目部分
@@ -58,10 +62,10 @@ def run():
     st.markdown(
         """
         ### 《Hello-Agents》
-        - **项目背景**: 如果说 2024 年是"百模大战"的元年，那么 2025/26 年无疑开启了"Agent 元年"。技术的焦点正从训练更大的基础模型，转向构建更聪明的智能体应用。为此，我们发起了 Hello-Agents 项目，希望能为大家提供一份从零开始、理论与实战并重的智能体系统构建指南。
+        - **项目背景**: 如果说 2024 年是"百模大战"的元年，那么 2026 年无疑开启了"Agent 元年"。技术的焦点正从训练更大的基础模型，转向构建更聪明的智能体应用。为此，我们发起了 Hello-Agents 项目，希望能为大家提供一份从零开始、理论与实战并重的智能体系统构建指南。
         - **项目介绍**: 如今 Agent 构建主要分为两派，一派是 Dify，Coze，n8n 这类软件工程类 Agent，其本质是流程驱动的软件开发，LLM 作为数据处理的后端；另一派则是 AI 原生的 Agent，即真正以 AI 驱动的 Agent。本教程旨在带领大家深入理解并构建——真正的全面的 AI Agent。我们相信，最好的学习方式就是动手实践。希望学习者能够从一名大语言模型的"使用者"，蜕变为一名智能体系统的"构建者"。
-        - **主要贡献**：我主要负责撰写第五章内容，涵盖扣子（Coze）智能体和 Dify 智能体的搭建实践。从页面介绍到模型选择，从开发流程讲解到提示词和配置示范，完整的介绍了一整套当前主流的低代码平台智能体开发范式。以及vide-coding了一个方便国内网络服务的教程Cookbook网站
-        - **项目链接**: [《Hello-Agents》](https://github.com/datawhalechina/hello-agents) [《Cookbook》](https://book.heterocat.com.cn)
+        - **主要贡献**：我主要负责撰写第五章内容，涵盖扣子（Coze）智能体、Dify 智能体和 Fastgpt 智能体的搭建实践。从页面介绍到模型选择，从开发流程讲解到提示词和配置示范，完整的介绍了一整套当前主流的低代码平台智能体开发范式。以及vide-coding了一个方便国内网络服务的教程Cookbook网站。除此之外，我还基于 helloagents  框架原本的 Python 版本融入自己的理解改造成相对应的 TS 版本供大家使用。
+        - **项目链接**: [《Hello-Agents》](https://github.com/datawhalechina/hello-agents) [《Cookbook》](https://traehello-agents-aicookbookt5mr.vercel.app) [《HelloAgents-TS》](https://github.com/HeteroCat/HelloAgents-TS)
         """
     )
 
@@ -115,6 +119,7 @@ def run():
         - **组织贡献**： 
         - [《hugging llm》](https://github.com/datawhalechina/hugging-llm)
         - [《hello-agents》](https://github.com/datawhalechina/hello-agents)
+        - [《Agent-Learning-Hub》](https://github.com/datawhalechina/Agent-Learning-Hub)
         - [《黄佩林的AI成长之路》](https://mp.weixin.qq.com/s/Lj_Wje3B4CkpH6SQT8fd1Q)
         
         
@@ -176,8 +181,8 @@ def run():
     st.write("## 工作经历")
     st.markdown(
         """
-        ### 深圳市华云科技研发有限公司--         Agent开发工程师
-        - **Time**：2025.08-至今
+        ### 深圳市探知未来有限公司--         AI工程师
+        - **Time**：2024.08 - 至今
         - **Description**: 根据公司业务开发智能AI问数，AI写作，AI数据分析，AI自动化和AI批改等agent智能体。
         - **Technologies**: 工作流智能体开发(FastGPT/扣子/Dify/N8N)，skills Agents技能开发, 数据后台开发
         """
@@ -225,32 +230,12 @@ def run():
         - **Technologies**:  Prompt chain, RAG知识库, OCR, FastGPT
         """
     )   
-    st.markdown(
-        """
-        ### 深圳跳舞兰科技有限公司--         AI工程师
-        - **Time**：2024.06-2025.07
-        - **Description**: 根据公司业务开发智能AI客服，AI画布，AI数据分析，AI自动化和AI营销等agent智能体。
-        - **Technologies**: 智能体开发(扣子/dify)，小程序AI开发, 数据后台开发
-        """
-    )
-    st.markdown("项目一：[业务AI化系统](http://ai.xiangbinmeigui.com/)")
-    data = pd.DataFrame({
-        '内容': ['六项具体业务相关内容'],
-        '原来所需时间': ["12h"],
-        '优化后时间': ['1.2h'],
-        '提升效率': ['约90%']
-    })
 
-    st.dataframe(data)
-    st.markdown("项目二：[花美家AI](http://huameijia.com.cn/)")
-    st.video("https://www.youtube.com/watch?v=2xcdmlqJjMM")
-    st.markdown("项目三：[AI画布](https://www.coze.cn/store/project/7487864472749490202)")
-    st.image("AIhuabu.png", width=700)
     
     st.markdown(
         """
-        ### 广州普瑞纯证医疗科技有限公司 --  提示词工程师（实习）
-        - **Time**：2023.06-2024.06
+        ### 广州普瑞纯证医疗科技有限公司 --  Python后端工程师（实习）
+        - **Time**：2024.01-2024.06
         - **Description**: 
              - 1.医疗专业文本生成AI产品的提示词进行具体细节的优化和补充扩充 2.0 版本，并协助 AI 产品经理进行公司新的 AIGC产品测试。进行 AI 大模型方面的探索，赋能公司的医疗 AIGC 产品。
              - 2.后端接口开发:承担了公司一部分邮件推送系统和订阅系统的接口开发。
@@ -302,8 +287,8 @@ def run():
     languages = {
             "Prompt": 95,
             "Python": 90,
-            "Matlab": 70,
-            "JS/TS": 65,
+            "JS/TS": 70,
+            "Matlab": 65,
             "R": 65,
             
         }
@@ -316,10 +301,10 @@ def run():
         # 框架和库
     st.markdown("### 框架和库")
     frameworks = {
-            "Matplotlib": 85,
-            "Pandas": 80,
-            "Openai": 70,
-            "Langchain": 65,
+            "Openai": 85,
+            "Claude": 80,
+            "Langchain": 70,
+            "Matplotlib": 65,
             "FastAPI": 65,
             "Flask": 60,
             "PyTorch": 50
@@ -334,7 +319,7 @@ def run():
     st.markdown("### 工具")
     tools = {
             "Claude code": 90,
-            "Trae": 90,
+            "Codex": 90,
             "Coze": 85,
             "Dify": 70,
             "即梦":65,
@@ -350,7 +335,7 @@ def run():
     st.write("## 联系 方式")
     st.markdown(
         """
-        - **phone**: 19830512935
+        - **phone**: 13128905803
         - **Email**: 1580823387@qq.com
         - **Douyin**: [Butterstorm](https://www.douyin.com/user/MS4wLjABAAAAvBkZt534BdaLk_KUZpdWBa3CzGgL-nvlMNZKWHD054U?previous_page=app_code_link)
         - **GitHub**: [HeteroCat](https://github.com/HeteroCat)
